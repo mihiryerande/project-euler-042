@@ -20,7 +20,7 @@ from math import floor, sqrt
 ALPHA_BASE = ord('A') - 1
 
 
-def is_triangle_word(w):
+def is_triangle_word(w: str) -> bool:
     """
     Returns True iff `w` is a 'triangle word',
       meaning the sum of its letters (as numbers) equals a triangle number.
@@ -42,7 +42,7 @@ def is_triangle_word(w):
     return n * (n+1) // 2 == total
 
 
-def main(filename):
+def main(filename: str) -> int:
     """
     Returns the count of words in given text file `f` which are 'triangle words'.
 
